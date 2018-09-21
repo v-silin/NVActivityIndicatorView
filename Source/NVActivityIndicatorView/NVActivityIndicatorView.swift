@@ -495,6 +495,13 @@ public final class NVActivityIndicatorView: UIView {
         }
     }
 
+    
+    public override func layoutIfNeeded() {
+        super.layoutIfNeeded()
+        
+        setUpAnimation()
+    }
+    
     /**
      Start animating.
      */
